@@ -36,6 +36,8 @@ _folder structure_
 
 .\samples - The samples file extracted from the FormulaRunner solution
 
+.\exe - The formula runner and supporting files in a zipped folder
+
 
 The code for Formula Runner consists of 
 - .\code\T802.Examples the original source code samples.xml is based on.
