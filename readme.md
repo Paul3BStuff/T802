@@ -29,8 +29,11 @@ The csv file should be readable in any program that can read csv files although 
 The seperator between each column is the tilde '~'.
  
 _folder structure_
+
 .\code The programs for T802.
+
 '\results a zipped set of four results files. 
+
 
 The code for Formula Runner consists of 
 .\code\T802.Examples the original source code samples.xml is based on.
