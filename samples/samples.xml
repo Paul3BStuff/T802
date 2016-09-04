@@ -1,0 +1,1230 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+These samples are inputs to the formula runner program. 
+The title attribute specifies the name of the sample.
+The variant attribute indicates the change the change made to the initial variant.
+The initial is a convention used to indicate a sample with no changes made to it.
+ -->
+<samples>
+  <sample title="HW" variant="I">
+    A method called Main.
+    Console WriteLine 'Hello, World'.
+    End method.
+  </sample>
+  <sample title="HW" variant="ILVN">
+    A method called Main.
+    Set messageToDisplay to be 'Hello, World'.
+    Console WriteLine messageToDisplay.
+    End method.
+  </sample>
+  <sample title="HW" variant="ISMI">
+    A method called M1.
+    Set v1 to be 'Hello, World'.
+    Console WriteLine v1.
+    End method.
+  </sample>
+  <sample title="HW" variant="IM">
+    A method called Main with 1 parameter.
+    Parameter 1 is called arg.
+    Call ShowMessage arg.
+    End method.
+    A method ShowMessage with 1 parameter.
+    Parameter 1 is msg.
+    Console WriteLine arg.
+    End method.
+  </sample>
+  <sample title="OE" variant="I">
+    A method called OddOrEven.
+    Console WriteLine 'Enter a number'.
+    Declare parameter and set it to Console ReadLine.
+    Set n to int Parse parameter.
+    If n modulo of 2 equal 0 then Console WriteLine 'Number is even'.
+    If not n modulo of 2 equal 0 then Console.WriteLine 'Number is odd'.
+    End method.
+  </sample>
+  <sample title="OE" variant="ILVN">
+    A method called OddOrEven.
+    Console WriteLine 'Enter a number'.
+    Declare parameter and set it to Console ReadLine.
+    Set numberToBeEvaluated to int Parse parameter.
+    Declare numberIsEvenMessage.
+    If numberToBeEvaluated modulo of 2 equal 0 then set numberIsEvenMessage to 'Number is even'.
+    If not numberToBeEvaluated modulo of 2 equal 0 then set numberIsEvenMessage to 'Number is odd'.
+    Console.WriteLine numberIsEvenMessage.
+    End method.
+  </sample>
+  <sample title="OE" variant="ISMI">
+    A method called M1.
+    Console WriteLine 'Enter a number'.
+    Declare parameter and set it to Console ReadLine.
+    Set v1 to int Parse parameter.
+    Declare v2.
+    If v1 modulo of 2 equal 0 then set v2 to 'Number is even'.
+    If not v1 modulo of 2 equal 0 then set v2 to 'Number is odd'.
+    Console.WriteLine v2.
+    End method.
+  </sample>
+  <sample title="OE" variant="IM">
+    A method called OddOrEven.
+    Console WriteLine 'Enter a number'.
+    Declare parameter and set it to Console ReadLine.
+    Set n to int Parse parameter.
+    Set iseven to IsNumberEven n.
+    Call DisplayMessage iseven.
+    End method.
+
+    A method called IsNumberEven with 1 parameter.
+    Parameter 1 is n.
+    Declare x.
+    If n modulo of 2 equal 0 then Set x to True else Set x to False.
+    End method.
+
+    A method called DisplayMessage with 1 parameter.
+    Parameter 1 is n.
+    If n is True equal 0 then Console WriteLine 'Number is even' else Console WriteLine 'Number is even'.
+    End method.
+  </sample>
+  <sample title="CV" variant="I">
+    A method called CheckIfAVowel.
+    Console WriteLine 'Enter a character'.
+    Declare parameter and set it to Console ReadLine.
+    Set ch to parameter [0].
+    Declare vowel.
+    Set vowel to false.
+    If ch equal 'a' or ch equal 'A' then Set isAVowel to true.
+    If ch equal 'e' or ch equal 'E' then Set isAVowel to true.
+    If ch equal 'i' or ch equal 'I' then Set isAVowel to true.
+    If ch equal 'o' or ch equal 'O' then Set isAVowel to true.
+    If ch equal 'u' or ch equal 'U' then Set isAVowel to true.
+    If vowel = true then Console.WriteLine ch plus ' is a vowel'.
+    If vowel = false then Console.WriteLine ch plus ' is not a vowel'.
+    End method.
+  </sample>
+  <sample title="CV" variant="ILVN">
+    A method called CheckIfAVowel.
+    Console WriteLine 'Enter a character'.
+    Declare parameter and set it to Console ReadLine.
+    Set character to parameter [0].
+    Declare characterIsAVowel.
+    Set characterIsAVowel to ' is not a vowel'.
+    If character equal 'a' or character equal 'A' then Set characterIsAVowel to ' is a vowel'.
+    If character equal 'e' or character equal 'E' then Set characterIsAVowel to ' is a vowel'.
+    If character equal 'i' or character equal 'I' then Set characterIsAVowel to ' is a vowel'.
+    If character equal 'o' or character equal 'O' then Set characterIsAVowel to ' is a vowel'.
+    If character equal 'u' or character equal 'U' then Set characterIsAVowel to ' is a vowel'.
+    Console WriteLine character plus ' ' plus characterIsAVowel.
+    End method.
+  </sample>
+  <sample title="CV" variant="ISMI">
+    A method called M1.
+    Console WriteLine 'Enter a character'.
+    Declare parameter and set it to Console ReadLine.
+    Set v1 to parameter [0].
+    Declare v2.
+    Set v2 to ' is not a vowel'.
+    If v1 equal 'a' or v1 equal 'A' then Set v2 to ' is a vowel'.
+    If v1 equal 'e' or v1 equal 'E' then Set v2 to ' is a vowel'.
+    If v1 equal 'i' or v1 equal 'I' then Set v2 to ' is a vowel'.
+    If v1 equal 'o' or v1 equal 'O' then Set v2 to ' is a vowel'.
+    If v1 equal 'u' or v1 equal 'U' then Set v2 to ' is a vowel'.
+    Console WriteLine v1 plus ' ' plus v2.
+    End method.
+  </sample>
+  <sample title="CV" variant="IM">
+    A method called CheckIfAVowel.
+    Console WriteLine 'Enter a character'.
+    Declare parameter and set it to Console ReadLine.
+    Set ch to parameter [0].
+    Declare vowel.
+    Set vowel to IsCharacterAVowel ch.
+    If ch equal u or ch equal U then Set isAVowel to true.
+    If vowel = true then Console.WriteLine ch plus ' is a vowel'.
+    If vowel = false then Console.WriteLine ch plus ' is not a vowel'.
+    End method.
+
+    A method called IsCharacterAVowel with 1 parameter.
+    Parameter 1 is ch.
+    Declare isAVowel.
+    Set isAVowel to False.
+    If ch equal 'a' or ch equal 'A' then Set isAVowel to true.
+    If ch equal 'e' or ch equal 'E' then Set isAVowel to true.
+    If ch equal 'i' or ch equal 'I' then Set isAVowel to true.
+    If ch equal 'o' or ch equal 'O' then Set isAVowel to true.
+    If ch equal 'u' or ch equal 'U' then Set isAVowel to true.
+    End method.
+  </sample>
+  <sample title="CL" variant="I">
+    A method called CheckIfALeapYear.
+    Console WriteLine 'Enter a year to check if it is a leap year'.
+    Declare parameter and set it to Console ReadLine.
+    Set year to parameter [0].
+    Declare leapYear.
+    Set leapYear to false.
+    If year modulo 400 equal 0 then Console WriteLine year plus ' is a leap year' else if year modulo 100 equal 0 then Console WriteLine year plus ' is not a leap year' else if year modulo 4 equal 0 then Console WriteLine year plus ' is a leap year' else Console WriteLine year plus ' is not a leap year'.
+    End method.
+  </sample>
+  <sample title="CL" variant="ILVN">
+    A method called CheckIfALeapYear.
+    Console WriteLine 'Enter a year to check if it is a leap year'.
+    Declare yearToCheck and set it to Console ReadLine.
+    Set yearToCheck to yearEntered [0].
+    Declare isLeapYear.
+    Set isLeapYear to false.
+    Declare message.
+    If yearToCheck modulo 400 equal 0 then Set message to 'is a leap year' else if yearToCheck modulo 100 equal 0 then Set message to ' is not a leap year' else if year modulo 4 equal 0 then Set message to ' is a leap year' else Set message to ' is not a leap year'.
+    Console WriteLine year + ' ' + message.
+    End method.
+  </sample>
+  <sample title="CL" variant="ISMI">
+    A method called M1.
+    Console WriteLine 'Enter a year to check if it is a leap year'.
+    Declare v1 and set it to Console ReadLine.
+    Set v2 to v1 [0].
+    Declare v3.
+    Set v3 to false.
+    Declare v4.
+    If v2 modulo 400 equal 0 then Set v4 to 'is a leap year' else if v2 modulo 100 equal 0 then Set v4 to ' is not a leap year' else if v2 modulo 4 equal 0 then Set v4 to ' is a leap year' else Set v4 to ' is not a leap year'.
+    Console WriteLine year + ' ' + v4.
+    End method.
+  </sample>
+  <sample title="CL" variant="IM">
+    A method called CheckIfALeapYear.
+    Console WriteLine 'Enter a year to check if it is a leap year'.
+    Declare parameter and set it to Console ReadLine.
+    Set year to parameter [0].
+    Declare leapYear.
+    Set leapYear to IsALeapYear leapYear.
+    If isLeapYear equal true then Console WriteLine year plus ' is a leap year' else Console WriteLine year plus ' is not a leap year'.
+    End method.
+
+    A method calls IsALeapYear with 1 parameter.
+    Parameter 1 is year.
+    Declare result.
+    If year modulo 400 equal 0 then result = true else if year modulo 100 equal 0 then set result = false else if year modulo 4 then set equal 0 then set result to true else set result to false.
+    End method
+  </sample>
+  <sample title="FT" variant="I">
+    A method called FloydsTriangle.
+    Console WriteLine 'Enter the number of rows of Floyd's triangle you want'.
+    Declare n.
+    Declare num and set it 0.
+    Declare rows and set it to Console ReadLine.
+    Declare n and set it to int Parse rows.
+    Console WriteLine 'Floyd's triangle :-'.
+    Declare c and set it to 0.
+    For each c less than or equal to n.
+    Declare d and set it to 0.
+    For each d less than or equal to c.
+    Console WriteLine num plus ' '.
+    Increment num by 1.
+    Increment d by 1.
+    End for each d.
+    Increment c by 1.
+    Console WriteLine Environment NewLine.
+    End for each c.
+    End method.
+  </sample>
+  <sample title="FT" variant="ILVN">
+    A method called FloydsTriangle.
+    Declare digit and set it 0.
+    Console WriteLine 'Enter the number of rows of Floyd's triangle you want'.
+    Declare rowsRequested and set it to Console ReadLine.
+    Declare numberOfRowsRequested and set it to int Parse rowsRequested.
+    Console WriteLine 'Floyd's triangle :-'.
+    Declare currentRowNumber and set it to 0.
+    For each currentRowNumber less than or equal to numberOfRowsRequested.
+    Declare currentColumn and set it to 0.
+    For each currentColumn less than or equal to currentRowNumber.
+    Console WriteLine digit plus ' '.
+    Increment digit by 1.
+    Increment currentColumn by 1.
+    End for each currentColumn.
+    Increment currentRowNumber by 1.
+    Console WriteLine Environment NewLine.
+    End for each currentRowNumber.
+    End method.
+  </sample>
+  <sample title="FT" variant="ISMI">
+    A method called M1.
+    Declare v1 and set it 0.
+    Console WriteLine 'Enter the number of rows of Floyd's triangle you want'.
+    Declare v2 and set it to Console ReadLine.
+    Declare v3 set it to int Parse v2.
+    Console WriteLine 'Floyd's triangle :-'.
+    Declare v4 and set it to 0.
+    For each v4 less than or equal to v3.
+    Declare v5 and set it to 0.
+    For each v5 less than or equal to v4.
+    Console WriteLine v1 plus ' '.
+    Increment v1 by 1.
+    Increment v5 by 1.
+    End for each v5.
+    Increment v4 by 1.
+    Console WriteLine Environment NewLine.
+    End for each v4.
+    End method.
+  </sample>
+  <sample title="FT" variant="IM">
+    A method called FloydsTriangle.
+    Console WriteLine 'Enter the number of rows of Floyd's triangle you want'.
+    Declare n.
+    Declare num and set it 0.
+    Declare rows and set it to Console ReadLine.
+    Declare n and set it to int Parse rows.
+    Console WriteLine 'Floyd's triangle :-'.
+    Call BuildTriangle n.
+    End method.
+
+    A method called BuildTriangle with 1 parameter.
+    Parameter 1 is n.
+    Declare c and set it to 0.
+    For each c less than or equal to n.
+    Declare d and set it to 0.
+    For each d less than or equal to c.
+    Console WriteLine num plus ' '.
+    Increment num by 1.
+    Increment d by 1.
+    End for each d.
+    Increment c by 1.
+    Console WriteLine Environment NewLine.
+    End for each c.
+    End method.
+  </sample>
+  <sample title="AM" variant="I">
+    A method called AddMatrices.
+    Declare m.
+    Declare n.
+    Console WriteLine 'Enter the number of rows and columns of matrix'.
+    Set m to int Parse Console ReadLine.
+    Set n to int Parse Console ReadLine.
+    Declare first [m, n].
+    Declare second [m, n].
+    Declare sum [m, n].
+    Console WriteLine 'Enter the elements of first matrix'.
+    Declare c and set it to 0.
+    For each c less than m.
+    Declare d and set it to 0.
+    For each d less than n.
+    set first[c, d] to int Parse Console ReadLine.
+    Increment c by 1.
+    End for each c.
+    Increment d by 1.
+    End for each d.
+    Console WriteLine 'Enter the elements of second matrix'.
+    Declare c and set it to 0.
+    For each c less than m.
+    Declare d and set it to 0.
+    For each d less than n.
+    set second[c, d] to first [c, d] plus second [c, d].
+    Increment c by 1.
+    End for each d.
+    Increment d by 1.
+    End for each c.
+    Declare c and set it to 0.
+    For each c less than m.
+    Declare d and set it to 0.
+    For each d less than n.
+    Set sum[c, d] to int Parse Console ReadLine.
+    Increment d by 1.
+    End for each d.
+    Increment c by 1.
+    End for each c.
+    Console WriteLine 'Sum of entered matrices:-'.
+    Declare c and set it to 0.
+    For each c less than m.
+    Declare d and set it to 0.
+    For each d less than n.
+    Console WriteLine sum [c, d].
+    Increment d by 1.
+    End for each d.
+    Increment d by 1.
+    End for each c.
+    End method.
+  </sample>
+  <sample title="AM" variant="ILVN">
+    A method called AddMatrices.
+    Declare matrixRows.
+    Declare matrixColumns.
+    Console WriteLine 'Enter the number of rows and columns of matrix'.
+    Set matrixRows to int Parse Console ReadLine.
+    Set matrixColumns to int Parse Console ReadLine.
+    Declare first [matrixRows, matrixColumn].
+    Declare second [matrixRows, matrixColumn].
+    Declare sum [matrixRows, matrixColumn].
+    Console WriteLine 'Enter the elements of first matrix'.
+    Declare rowIndex and set it to 0.
+    For each rowIndex less than matrixRows.
+    Declare columnIndex and set it to 0.
+    For each columnIndex less than matrixColumns.
+    set first[rowIndex, columnIndex] to int Parse Console ReadLine.
+    Increment rowIndex by 1.
+    End for each rowIndex.
+    Increment columnIndex by 1.
+    End for each columnIndex.
+    Console WriteLine 'Enter the elements of second matrix'.
+    Declare rowIndex and set it to 0.
+    For each rowIndex less than matrixRow.
+    Declare columnIndex and set it to 0.
+    For each columnIndex less than matrixColumn.
+    set second[rowIndex, columnIndex] to int Parse Console ReadLine.
+    Increment columnIndex by 1.
+    End for each columnIndex.
+    Increment rowIndex by 1.
+    End for each rowIndex.
+    Declare columnIndex and set it to 0.
+    For each columnIndex less than matrixRow.
+    Declare rowIndex and set it to 0.
+    For each rowIndex less than matrixColumn.
+    Set sum[columnIndex, rowIndex] to first [columnIndex, rowIndex] plus second [columnIndex, rowIndex].
+    Increment rowIndex by 1.
+    End for each columnIndex.
+    Increment columnIndex by 1.
+    End for each columnIndex.
+    Console WriteLine 'Sum of entered matrices:-'.
+    Declare rowIndex and set it to 0.
+    For each rowIndex less than matrixRow.
+    Declare columnIndex and set it to 0.
+    For each columnIndex less than matrixColumn.
+    Console WriteLine sum [rowIndex, columnIndex].
+    Increment columnIndex by 1.
+    End for each columnIndex.
+    Increment rowIndex by 1.
+    End for each rowIndex.
+    End method.
+  </sample>
+  <sample title="AM" variant="ISMI">
+    A method called M1.
+    Declare v1.
+    Declare v2.
+    Console WriteLine 'Enter the number of rows and columns of matrix'.
+    Set v1 to int Parse Console ReadLine.
+    Set v2 to int Parse Console ReadLine.
+    Declare v3 [v1, v2].
+    Declare v4 [v1, v2].
+    Declare v5 [v1, v2].
+    Console WriteLine 'Enter the elements of first matrix'.
+    Declare v6 and set it to 0.
+    For each v6 less than v1.
+    Declare v7 and set it to 0.
+    For each v7 less than v2.
+    set v3 [v6, v7] to int Parse Console ReadLine.
+    Increment v6 by 1.
+    End for each v6.
+    Increment v7 by 1.
+    End for each v7.
+    Console WriteLine 'Enter the elements of second matrix'.
+    Declare v6 and set it to 0.
+    For each v6 less than v1.
+    Declare v7 and set it to 0.
+    For each v7 less than v2.
+    set v4 [v6, v7] to int v3 [v6, v7] plus v4 [v6, v7].
+    Increment v7 by 1.
+    End for each v7.
+    Increment v6 by 1.
+    End for each v6.
+    Declare v7 and set it to 0.
+    For each v7 less than v1.
+    Declare v6 and set it to 0.
+    For each v6 less than v2.
+    Set v5[v7, v6] to int Parse Console ReadLine.
+    Increment v6 by 1.
+    End for each v7.
+    Increment columnIndex by 1.
+    End for each columnIndex.
+    Console WriteLine 'Sum of entered matrices:-'.
+    Declare rowIndex and set it to 0.
+    For each rowIndex less than matrixRow.
+    Declare columnIndex and set it to 0.
+    For each columnIndex less than matrixColumn.
+    Console WriteLine sum [rowIndex, columnIndex].
+    Increment columnIndex by 1.
+    End for each columnIndex.
+    Increment rowIndex by 1.
+    End for each rowIndex.
+    End method.
+  </sample>
+  <sample title="AM" variant="IM">
+    A method called AddMatrices.
+    Declare m.
+    Declare n.
+    Console WriteLine 'Enter the number of rows and columns of matrix'.
+    Set m to int Parse Console ReadLine.
+    Set n to int Parse Console ReadLine.
+    Declare first.
+    Declare second.
+    Declare sum [m, n].
+    Console WriteLine 'Enter the elements of first matrix'.
+    Set first to BuildMatrix m and n.
+    Console WriteLine 'Enter the elements of second matrix'.
+    Set second to BuildMatrix m and n.
+    Set sum = SumMatrix with first, second, m, n.
+    End method.
+
+    A method called BuildMatrix with 2 parameters.
+    Parameter 1 is called m.
+    Parameter 2 is called n.
+    Declare matrix [m, n].
+    Declare c and set it to 0.
+    For each c less than m.
+    Declare d and set it to 0.
+    For each d less than n.
+    set matrix[c, d] to int Parse Console ReadLine.
+    Increment c by 1.
+    End for each c.
+    Increment d by 1.
+    End for each d.
+    End method.
+
+    A method called SumMatrix with 4 parameters.
+    Parameter 1 is called first.
+    Parameter 2 is called second.
+    Parameter 3 is called m.
+    Parameter 4 is called n.
+    Declare sum [m, n].
+    Declare c and set it to 0.
+    For each c less than m.
+    Declare d and set it to 0.
+    For each d less than n.
+    Set sum[c, d] to first [c, d] plus second [c, d].
+    Increment d by 1.
+    End for each d.
+    Increment c by 1.
+    End for each c.
+    End method.
+
+    A method called DisplayMatrix with 3 parameters.
+    Parameter 1 is called first.
+    Parameter 2 is called m.
+    Parameter 3 is called n.
+    Console WriteLine 'Sum of entered matrices:-'.
+    Declare c and set it to 0.
+    For each c less than m.
+    Declare d and set it to 0.
+    For each d less than n.
+    Console WriteLine sum [c, d].
+    Increment d by 1.
+    End for each d.
+    Increment d by 1.
+    End for each c.
+    End method.
+  </sample>
+  <sample title="AM" variant="SM_AM_AM">
+    A method called AddMatrices.
+    Declare m.
+    Declare n.
+    Console WriteLine 'Enter the number of rows and columns of matrix'.
+    Set m to int Parse Console ReadLine.
+    Set n to int Parse Console ReadLine.
+    Declare first.
+    Declare second.
+    Declare sum [m, n].
+    Console WriteLine 'Enter the elements of first matrix'.
+    Set first to BuildMatrix m and n.
+    Console WriteLine 'Enter the elements of second matrix'.
+    Set second to BuildMatrix m and n.
+    Set sum = SumMatrix with first, second, m, n.
+    End method.
+  </sample>
+  <sample title="AM" variant="SM_AM_BM">
+    A method called BuildMatrix with 2 parameters.
+    Parameter 1 is called m.
+    Parameter 2 is called n.
+    Declare matrix [m, n].
+    Declare c and set it to 0.
+    For each c less than m.
+    Declare d and set it to 0.
+    For each d less than n.
+    set matrix[c, d] to int Parse Console ReadLine.
+    Increment c by 1.
+    End for each c.
+    Increment d by 1.
+    End for each d.
+    End method.
+  </sample>
+  <sample title="AM" variant="SM_AM_SM">
+    A method called SumMatrix with 4 parameters.
+    Parameter 1 is called first.
+    Parameter 2 is called second.
+    Parameter 3 is called m.
+    Parameter 4 is called n.
+    Declare sum [m, n].
+    Declare c and set it to 0.
+    For each c less than m.
+    Declare d and set it to 0.
+    For each d less than n.
+    Set sum[c, d] to first [c, d] plus second [c, d].
+    Increment d by 1.
+    End for each d.
+    Increment c by 1.
+    End for each c.
+    End method.
+  </sample>
+  <sample title="AM" variant="SM_AM_DM">
+    A method called DisplayMatrix with 3 parameters.
+    Parameter 1 is called first.
+    Parameter 2 is called m.
+    Parameter 3 is called n.
+    Console WriteLine 'Sum of entered matrices:-'.
+    Declare c and set it to 0.
+    For each c less than m.
+    Declare d and set it to 0.
+    For each d less than n.
+    Console WriteLine sum [c, d].
+    Increment d by 1.
+    End for each d.
+    Increment d by 1.
+    End for each c.
+    End method.
+  </sample>
+  <sample title="NN" variant="I">
+    A method called NarcissisticNumber.
+    Declare n.
+    Declare sum and set it to 0.
+    Declare temp.
+    Declare remainder.
+    Declare digits and set it to 0.
+    Console WriteLine 'Input a number to check if it is an narcissistic number'.
+    Set parameter to Console ReadLine.
+    set n to int Parse parameter.
+    Set temp to n.
+    For each temp until temp equal 0.
+    Set digits to digits plus 1.
+    Set temp to temp divided by 10.
+    End for each.
+    Set temp to n.
+    For each temp until temp equal 0.
+    Set remainder to temp modulo 10.
+    Set sum to sum plus Power remainder digits.
+    Set temp to temp divided 10.
+    End for each.
+    If n equal to sum  then Console WriteLine n plus ' is an narcissistic number' Otherwise Console WriteLine n plus ' is not an narcissistic number'.
+    End method.
+
+    A method called power with two parameters.
+    Parameter 1 is n.
+    Parameter 2 is r.
+    Declare c and set it to 1.
+    Declare p and set it to 1.
+    For each c less than or equal r.
+    Set p to p multiplied by n.
+    Set c to c plus 1.
+    End for each.
+    End method.
+  </sample>
+  <sample title="NN" variant="ILVN">
+    A method called NarcissisticNumber.
+    Declare numberToCheck.
+    Declare sum and set it to 0.
+    Declare temp.
+    Declare remainder.
+    Declare digits and set it to 0.
+    Console WriteLine 'Input a number to check if it is an narcissistic number'.
+    Set parameter to Console ReadLine.
+    Set numberToCheck to int Parse parameter.
+    Set temp to numberToCheck.
+    For each temp until temp equal 0.
+    Set digits to digits plus 1.
+    Set temp to temp divided by 10.
+    End for each.
+    Set temp to numberToCheck.
+    For each temp until temp equal 0.
+    Set remainder to temp modulo 10.
+    Set sum to sum plus PowerOf remainder digits.
+    Set temp to temp divided 10.
+    End for each.
+    If numberToCheck equal to sum then Console WriteLine numberToCheck plus ' is an narcissistic number' Otherwise Console WriteLine numberToCheck plus ' is not an narcissistic number'.
+    End method.
+
+    A method called PowerOf with two parameters.
+    Parameter 1 is remainder.
+    Parameter 2 is digits.
+    Declare index and set it to 1.
+    Declare power and set it to 1.
+    For each index less than or equal digits.
+    Set power to power multiplied by remainder.
+    Set index to index plus 1.
+    End for each index.
+    End method.
+  </sample>
+  <sample title="NN" variant="ISMI">
+    A method called M1.
+    Declare v1.
+    Declare v2 and set it to 0.
+    Declare v3.
+    Declare v4.
+    Declare v5 and set it to 0.
+    Console WriteLine 'Input a number to check if it is an narcissistic number'.
+    Set parameter to Console ReadLine.
+    Set v1 to int Parse parameter.
+    Set v3 to v1.
+    For each v3 until v3 equal 0.
+    Set v5 to v5 plus 1.
+    Set v3 to v3 divided by 10.
+    End for each.
+    Set v3 to v1.
+    For each v3 until v3 equal 0.
+    Set v4 to v3 modulo 10.
+    Set v2 to v2 plus M2 v4 v5.
+    Set v3 to v3 divided 10.
+    End for each.
+    If v1 equal to v2 then Console WriteLine v1 plus ' is an narcissistic number' Otherwise Console WriteLine v1 plus ' is not an narcissistic number'.
+    End method.
+
+    A method called M2 with two parameters.
+    Parameter 1 is v4.
+    Parameter 2 is v5.
+    Declare v6 and set it to 1.
+    Declare v7 and set it to 1.
+    For each v6 less than or equal v5.
+    Set v7 to v7 multiplied by v4.
+    Set v6 to v6 plus 1.
+    End for each v6.
+    End method.
+  </sample>
+  <sample title="TPK" variant="I">
+    A method called TrabbPardoKnuth.
+    Declare check and set to 400.
+    Declare results.
+    Declare inputs [11].
+    Declare i.
+    Console WriteLine 'Please enter 11 numbers :'.
+    Declare number.
+    For each i less than 11.
+    Console WriteLine i plus ':'.
+    Set number to Console ReadLine.
+    Set inputs [i] to Double Parse number.
+    Increment i by 1.
+    End for each.
+    Console WriteLine 'Evaluating f(x) = |x|^0.5 + 5x^3 for the given inputs :'.
+    Declare i and set it 10.
+    For each i greater than 0.
+    Declare result and set it to Math Sqrt inputs [i] plus 5 multiplied by Math Pow input [i] 3.
+    If result greater than check then Console WriteLine 'Overflow!' Else Console WriteLine result.
+    End if.
+    Decrement i by 1.
+    End for each.
+    End method.
+    A method called Fab with one parameter.
+    Parameter 1 is n.
+    Return Math Sqrt Math Abs n + 5  multiplied by n multiplied by n multiplied by n.
+    End method.
+  </sample>
+  <sample title="TPK" variant="ILVN">
+    A method called TrabbPardoKnuth.
+    Declare checkLimit and set to 400.
+    Declare results.
+    Declare inputs [11].
+    Declare numberIndex.
+    Console WriteLine 'Please enter 11 numbers :'.
+    Declare number.
+    For each numberIndex less than 11.
+    Console WriteLine numberIndex plus ':'.
+    Set number to Console ReadLine.
+    Set inputs [numberIndex] to Double Parse number.
+    Increment numberIndex by 1.
+    End for each.
+    Console WriteLine 'Evaluating f(x) = |x|^0.5 + 5x^3 for the given inputs :'.
+    Declare index and set it 10.
+    For each index greater than 0.
+    Declare result and set it to Math Sqrt Fab inputs [index] plus 5 multiplied by Math Pow input [index] 3.
+    If result greater than checkLimit then Console WriteLine 'Overflow!' Else Console WriteLine result.
+    End if.
+    Decrement index by 1.
+    End for each.
+    End method.
+    A method called Fab with one parameter.
+    Parameter 1 is n.
+    Return Math Sqrt Math Abs n + 5  multiplied by n multiplied by n multiplied by n.
+    End method.
+  </sample>
+  <sample title="TPK" variant="ISMI">
+    A method called M1.
+    Declare v1 and set to 400.
+    Declare v2.
+    Declare v3 [11].
+    Declare v4.
+    Console WriteLine 'Please enter 11 v5s :'.
+    Declare v5.
+    For each v4 less than 11.
+    Console WriteLine v4 plus ':'.
+    Set v5 to Console ReadLine.
+    Set v3 [v4] to Double Parse v5.
+    Increment v4 by 1.
+    End for each.
+    Console WriteLine 'Evaluating f(x) = |x|^0.5 + 5x^3 for the given v3 :'.
+    Declare v6 and set it 10.
+    For each v6 greater than 0.
+    Declare v7 and set it to Math Sqrt M2 v3 [v6] plus 5 multiplied by Math Pow input [v6] 3.
+    If v7 greater than v1 then Console WriteLine 'Overflow!' Else Console WriteLine v7.
+    End if.
+    Decrement v6 by 1.
+    End for each.
+    End method.
+
+    A method called M2 with one parameter.
+    Parameter 1 is v1.
+    Return Math Sqrt Math Abs v1 + 5  multiplied by v1 multiplied by v1 multiplied by v1.
+    End method.
+  </sample>
+  <sample title="TPK" variant="IM">
+    A method called TrabbPardoKnuth.
+    Declare check and set to 400.
+    Declare results.
+    Declare inputs.
+    Set inputs = InputNumbers.
+    Call EvaluteNumbers inputs.
+    End method.
+
+    A method called InputNumbers.
+    Declare i.
+    Declare inputs [11].
+    Console WriteLine 'Please enter 11 numbers :'.
+    Declare number.
+    For each i less than 11.
+    Console WriteLine i plus ':'.
+    Set number to Console ReadLine.
+    Set inputs [i] to Double Parse number.
+    Increment i by 1.
+    End method.
+
+    A method called EvaluteNumbers with 1 parameter.
+    Parameter 1 is inputs.
+    Declare i and set it 10.
+    Console WriteLine 'Evaluating f(x) = |x|^0.5 + 5x^3 for the given inputs :'.
+    For each i greater than 0.
+    Declare result and set it to Math Sqrt Fab inputs [i] plus 5 multiplied by Math Pow input [i] 3.
+    If result greater than check then Console WriteLine 'Overflow!' Else Console WriteLine result.
+    End if.
+    Decrement i by 1.
+    End for each.
+    End method.
+
+    A method called Fab with one parameter.
+    Parameter 1 is n.
+    Return Math Sqrt Math Fab n + 5  multiplied by n multiplied by n multiplied by n.
+    End method.
+  </sample>
+  <sample title="TPK" variant="SM_TPK_TPK">
+    A method called TrabbPardoKnuth.
+    Declare check and set to 400.
+    Declare results.
+    Declare inputs.
+    Set inputs = InputNumbers.
+    Call EvaluteNumbers inputs.
+    End method.
+  </sample>
+  <sample title="TPK" variant="SM_TPK_IN">
+    A method called InputNumbers.
+    Declare i.
+    Declare inputs [11].
+    Console WriteLine 'Please enter 11 numbers :'.
+    Declare number.
+    For each i less than 11.
+    Console WriteLine i plus ':'.
+    Set number to Console ReadLine.
+    Set inputs [i] to Double Parse number.
+    Increment i by 1.
+    End method.
+  </sample>
+  <sample title="TPK" variant="SM_TPK_EN">
+    A method called EvaluteNumbers with 1 parameter.
+    Parameter 1 is inputs.
+    Declare i and set it 10.
+    Console WriteLine 'Evaluating f(x) = |x|^0.5 + 5x^3 for the given inputs :'.
+    For each i greater than 0.
+    Declare result and set it to Math Sqrt Fab inputs [i] plus 5 multiplied by Math Pow input [i] 3.
+    If result greater than check then Console WriteLine 'Overflow!' Else Console WriteLine result.
+    End if.
+    Decrement i by 1.
+    End for each.
+    End method.
+  </sample>
+  <sample title="TPK" variant="SM_TPK_F">
+    A method called Fab with one parameter.
+    Parameter 1 is n.
+    Return Math Sqrt Math Fab n + 5  multiplied by n multiplied by n multiplied by n.
+    End method.
+  </sample>
+  <sample title="Z" variant="I">
+    A method called Zeckendorf.
+    Declare i and set to 1.
+    For each i less than or equal to 20.
+    Declare zeckendorfRepresentation to Zeckendorf i.
+    Console WriteLine String Format '{0} : {1}', i, zeckendorfRepresentation.
+    End for each.
+    Console ReadKey.
+    End method.
+
+    A method called Zeckendorf with 1 parameter.
+    Parameter 1 is num.
+    Declare fibonacciNumbers.
+    Declare fibPosition and set to 2.
+    Declare currentFibonacciNum = Fibonacci fibPosition.
+    For each currentFibonacciNum until greater than or equal to num.
+    fibonacciNumbers Add currentFibonacciNum.
+    Increment fibPosition by 1.
+    Declare currentFibonacciNum and set to Fibonacci fibPosition.
+    End for each.
+    Declare temp and set to num.
+    Declare output.
+    For each item in fibonacciNumbers Reverse.
+    If item less than or equal to temp then output append '1' and set temp to equal temp minus item Else output Append '0'.
+    End if.
+    Return output ToString.
+    End for each.
+    End method.
+
+    A method called Fibonacci with 1 parameter.
+    Parameter 1 is n.
+    Declare r.
+    if n less than 2 then Set result to n Else Set r to Fibonacci n minus 1 plus Fibonacci n minus 2.
+    Return r.
+    End method.
+  </sample>
+  <sample title="Z" variant="ILVN">
+    A method called Zeckendorf.
+    Declare index and set to 1.
+    For each index less than or equal to 20.
+    Declare zeckendorfRepresentation to Zeckendorf index.
+    Console WriteLine String Format '{0} : {1}', index, zeckendorfRepresentation.
+    End for each.
+    Console ReadKey.
+    End method.
+
+    A method called Zeckendorf with 1 parameter.
+    Parameter 1 is number.
+    Declare fibonacciNumbers.
+    Declare fibonacciPosition and set to 2.
+    Declare currentFibonacciNumber = Fibonacci fibonacciPosition.
+    For each currentFibonacciNumber until greater than or equal to number.
+    fibonacciNumbers Add currentFibonacciNumber.
+    Increment fibonacciPosition by 1.
+    Declare currentFibonacciNumber and set to Fibonacci fibonacciPosition.
+    End for each.
+    Declare workingNumber and set to number.
+    Declare output.
+    For each currentFibonacciNumber in fibonacciNumbers Reverse.
+    If currentFibonacciNumber less than or equal to workingNumber then output append '1' and set workingNumber to equal workingNumber minus currentFibonacciNumber Else output Append '0'.
+    End if.
+    Return output ToString.
+    End for each.
+    End method.
+
+    A method called Fibonacci with 1 parameter.
+    Parameter 1 is number.
+    Declare result.
+    if number less than 2 then Set result to n Else Set result to Fibonacci n minus 1 plus Fibonacci n minus 2.
+    Return result.
+    End method.
+  </sample>
+  <sample title="Z" variant="ISMI">
+    A method called M1.
+    Declare v1 and set to 1.
+    For each v1 less than or equal to 20.
+    Declare v2 to M2  v1.
+    Console WriteLine String Format '{0} : {1}', v1, v2.
+    End for each.
+    Console ReadKey.
+    End method.
+
+    A method called M2 with 1 parameter.
+    Parameter 1 is v1.
+    Declare v2.
+    Declare v3 and set to 2.
+    Declare v4 = M3 v3.
+    For each v4 until greater than or equal to v1.
+    v2 Add v4.
+    Increment v3 by 1.
+    Declare v4 and set to M3 v3.
+    End for each.
+    Declare v5 and set to v1.
+    Declare output.
+    For each v4 in v2 Reverse.
+    If v4 less than or equal to v5 then output append '1' and set v5 to equal v5 minus v4 Else output Append '0'.
+    End if.
+    Return output ToString.
+    End for each.
+    End method.
+
+    A method called M3 with 1 parameter.
+    Parameter 1 is v1.
+    Declare v2.
+    if v1 less than 2 then Set v2 to v1 Else Set v2 to M3 v1 minus 1 plus M3 v1 minus 2.
+    Return result.
+    End method.
+  </sample>
+  <sample title="Z" variant="IM">
+    A method called Zeckendorf.
+    Declare i and set to 1.
+    For each i less than or equal to 20.
+    Declare zeckendorfRepresentation to Zeckendorf i.
+    Console WriteLine String Format '{0} : {1}', i, zeckendorfRepresentation.
+    End for each.
+    Console ReadKey.
+    End method.
+
+    A method called Zeckendorf with 1 parameter.
+    Parameter 1 is num.
+    Declare fibonacciNumbers.
+    Declare fibPosition and set to 2.
+    Declare currentFibonacciNum = Fibonacci fibPosition.
+    For each currentFibonacciNum until greater than or equal to num.
+    fibonacciNumbers Add currentFibonacciNum.
+    Increment fibPosition by 1.
+    Declare currentFibonacciNum and set to Fibonacci fibPosition.
+    End for each.
+    Declare temp and set to num.
+    Declare output.
+    For each item in fibonacciNumbers Reverse.
+    If item less than or equal to temp then output append '1' and set temp to equal temp minus item Else output Append '0'.
+    End if.
+    Return output ToString.
+    End for each.
+    End method.
+
+    A method called Fibonacci with 1 parameter.
+    Parameter 1 is n.
+    Declare r.
+    if n less than 2 then Set result to n Else Set r to Fibonacci n minus 1 plus Fibonacci n minus 2.
+    Return r.
+    End method.
+  </sample>
+  <sample title="Z" variant="SM_Z_Z">
+    A method called Zeckendorf.
+    Declare i and set to 1.
+    For each i less than or equal to 20.
+    Declare zeckendorfRepresentation to Zeckendorf i.
+    Console WriteLine String Format '{0} : {1}', i, zeckendorfRepresentation.
+    End for each.
+    Console ReadKey.
+    End method.
+  </sample>
+  <sample title="Z" variant="SM_Z_Z1">
+    A method called Zeckendorf with 1 parameter.
+    Parameter 1 is num.
+    Declare fibonacciNumbers.
+    Declare fibPosition and set to 2.
+    Declare currentFibonacciNum = Fibonacci fibPosition.
+    For each currentFibonacciNum until greater than or equal to num.
+    fibonacciNumbers Add currentFibonacciNum.
+    Increment fibPosition by 1.
+    Declare currentFibonacciNum and set to Fibonacci fibPosition.
+    End for each.
+    Declare temp and set to num.
+    Declare output.
+    For each item in fibonacciNumbers Reverse.
+    If item less than or equal to temp then output append '1' and set temp to equal temp minus item Else output Append '0'.
+    End if.
+    Return output ToString.
+    End for each.
+    End method.
+  </sample>
+  <sample title="Z" variant="SM_Z_F">
+    A method called Fibonacci with 1 parameter.
+    Parameter 1 is n.
+    Declare r.
+    if n less than 2 then Set result to n Else Set r to Fibonacci n minus 1 plus Fibonacci n minus 2.
+    Return r.
+    End method.
+  </sample>
+  <sample title="QS" variant="I">
+    A method called QuickSort.
+    Declare unsorted and set to {'z', 'e', 'x', 'c', 'm', 'q', 'a'}.
+    Declare i and set to 0.
+    For each i less than unsorted length.
+    Console Write unsorted [i] plus ' '.
+    Increment i by 1.
+    Console WriteLine.
+    Call Sort with unsorted, 0, unsorted length minus 1.
+    End for each.
+    For each i less than unsorted length.
+    Console Write unsorted [i] plus ' '.
+    Increment i by 1.
+    Console WriteLine.
+    Console ReadLine.
+    End method.
+
+    A method called Sort with 3 parameters.
+    Parameter 1 is elements.
+    Parameter 2 is left.
+    Parameter 3 is right.
+    Declare i and set to left.
+    Declare j and set to right.
+    Declare pivot and set to elements [(left plus right) divided by 2].
+    For each i until i less than or equal to j.
+    For each elements [i] CompareTo pivot until less than 0.
+    Increment i by 1.
+    End for each.
+    For each elements [i] CompareTo pivot until greater than 0.
+    Decrement i by 1.
+    End for each.
+    If i less than or equal to j.
+    Declare tmp and set to elements [i].
+    Set elements [i] to elements [j].
+    Set elements [j] to tmp.
+    Set i to i plus 1.
+    Set i to j minus 1.
+    End if.
+    If left less than j.
+    Call QuickSort elements, left, j.
+    End if.
+    If i less than right.
+    Call QuickSort elements, i, right.
+    End if.
+    End for each.
+    End method.
+  </sample>
+  <sample title="QS" variant="ILVN">
+    A method called QuickSort.
+    Declare unsorted and set to {'z', 'e', 'x', 'c', 'm', 'q', 'a'}.
+    Declare arrayIndex and set to 0.
+    For each arrayIndex less than unsorted length.
+    Console Write unsorted [arrayIndex] plus ' '.
+    Increment arrayIndex by 1.
+    Console WriteLine.
+    Call SortEntries with unsorted, 0, unsorted length minus 1.
+    End for each.
+    Declare arrayIndex and set to 0.
+    For each i less than unsorted length.
+    Console Write unsorted [arrayIndex] plus ' '.
+    Increment arrayIndex by 1.
+    Console WriteLine.
+    Console ReadLine.
+    End method.
+
+    A method called SortEntries with 3 parameters.
+    Parameter 1 is elements.
+    Parameter 2 is leftValue.
+    Parameter 3 is rightValue.
+    Declare leftEntry and set to leftValue.
+    Declare rightEntry and set to rightValue.
+    Declare pivot and set to elements [(leftValue plus rightValue) divided by 2].
+    For each leftEntry until leftEntry less than or equal to rightEntry.
+    For each elements [leftEntry] CompareTo pivot until less than 0.
+    Increment leftEntry by 1.
+    End for each.
+    For each elements [leftEntry] CompareTo pivot until greater than 0.
+    Decrement leftEntry by 1.
+    End for each.
+    If leftEntry less than or equal to rightEntry.
+    Declare working and set to elements [leftEntry].
+    Set elements [leftEntry] to elements [rightEntry].
+    Set elements [rightEntry] to working.
+    Set leftEntry to leftEntry plus 1.
+    Set leftEntry to rightEntry minus 1.
+    End if.
+    If leftValue less than rightEntry.
+    Call SortEntries elements, leftEntry, rightValue.
+    End if.
+    If i less than right.
+    Call SortEntries elements, leftValue, rightEntry.
+    End if.
+    End for each.
+    End method.
+  </sample>
+  <sample title="QS" variant="ISMI">
+    A method called M1.
+    Declare v1 and set to {'z', 'e', 'x', 'c', 'm', 'q', 'a'}.
+    Declare v2 and set to 0.
+    For each v2 less than v1 length.
+    Console Write v1 [v2] plus ' '.
+    Increment v2 by 1.
+    Console WriteLine.
+    Call M2 with v1, 0, v1 length minus 1.
+    End for each.
+    Declare v2 and set to 0.
+    For each v3 less than v1 length.
+    Console Write v1 [v2] plus ' '.
+    Increment v2 by 1.
+    Console WriteLine.
+    Console ReadLine.
+    End method.
+
+    A method called M2 with 3 parameters.
+    Parameter 1 is v1.
+    Parameter 2 is v2.
+    Parameter 3 is v3.
+    Declare v4 and set to v2.
+    Declare v5 and set to v3.
+    Declare v6 and set to v1 [(v2 plus v3) divided by 2].
+    For each v4 until v4 less than or equal to v5.
+    For each v1 [v4] CompareTo v6 until less than 0.
+    Increment v4 by 1.
+    End for each.
+    For each v1 [v4] CompareTo v6 until greater than 0.
+    Decrement v4 by 1.
+    End for each.
+    If v4 less than or equal to v5.
+    Declare v7 and set to v1 [v4].
+    Set v1 [v4] to v1 [v5].
+    Set v1 [v5] to v7.
+    Set v4 to v4 plus 1.
+    Set v4 to v5 minus 1.
+    End if.
+    If v2 less than v5.
+    Call M2 v1, v4, v3.
+    End if.
+    If i less than right.
+    Call M2 v1, v2, v5.
+    End if.
+    End for each.
+    End method.
+  </sample>
+  <sample title="QS" variant="IM">
+    A method called Quicksort.
+    Declare unsorted and set to {'z', 'e', 'x', 'c', 'm', 'q', 'a'}.
+    Call DisplaySortedList unsorted.
+    Console WriteLine.
+    Call SortEntries with unsorted, 0, unsorted length minus 1.
+    Call DisplaySortedList unsorted.
+    Console WriteLine.
+    Console ReadLine.
+    End method.
+
+    A method called DisplayList with 1 parameter.
+    Parameter 1 is list.
+    Declare i.
+    For each i less than list length.
+    Console Write list [i] plus ' '.
+    Increment i by 1.
+    End for each.
+    End method.
+
+    A method called SortEntries with 3 parameters.
+    Parameter 1 is elements.
+    Parameter 2 is left.
+    Parameter 3 is right.
+    Declare i and set to left.
+    Declare j and set to right.
+    Declare pivot and set to elements [(left plus right) divided by 2].
+    For each i until i less than or equal to j.
+    For each elements [i] CompareTo pivot until less than 0.
+    Increment i by 1.
+    End for each.
+    For each elements [i] CompareTo pivot until greater than 0.
+    Decrement i by 1.
+    End for each.
+    If i less than or equal to j.
+    Call Swap i, j, elements.
+    Set i to i plus 1.
+    Set i to j minus 1.
+    End if.
+    If left less than j.
+    Call SortEntries elements, left, j.
+    End if.
+    If i less than right.
+    Call SortEntries elements, i, right.
+    End if.
+    End for each.
+    End method.
+
+    A method called Swap with 3 parameters.
+    Parameter 1 is i.
+    Parameter 2 is j.
+    Parameter 3 is elements.
+    Declare tmp and set to elements [i].
+    Set elements [i] to elements [j].
+    Set elements [j] to tmp.
+    End method.
+  </sample>
+</samples>
