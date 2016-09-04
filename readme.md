@@ -30,16 +30,18 @@ The seperator between each column is the tilde '~'.
  
 _folder structure_
 
-.\code The programs for T802.
+.\code - The programs for T802.
 
-'\results a zipped set of four results files. 
+.\results - a zipped set of four results files. 
+
+.\samples - The samples file extracted from the FormulaRunner solution
 
 
 The code for Formula Runner consists of 
-.\code\T802.Examples the original source code samples.xml is based on.
-.\code\T802 The visual studio solution for T802 (requires VS2015 express or greater).
+- .\code\T802.Examples the original source code samples.xml is based on.
+- .\code\T802 The visual studio solution for T802 (requires VS2015 express or greater).
 
-The Formula Runner solution consists of four projects
+The Formula Runner solution consists of three projects
 - FormulaRunner: The executable
 - FormulaRunner.Domain: Classes used by the FormulaRunner program
 - FormulaRunner.Tests: Set of unit tests
